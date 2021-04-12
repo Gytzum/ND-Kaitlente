@@ -1,0 +1,101 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    height: 100vh;
+
+}
+
+.kaitlente {
+    background: linear-gradient(120deg, #3f87a6, #ebf8e1, #f69d3c);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 650px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: black 1px 1px 5px;
+}
+
+.kaitlente > .hole {
+    display: inline-block;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-self:center;
+    justify-self: center;
+}
+
+.buttons {
+    display: flex;
+    grid-column: span 2;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.button {
+    display: inline-block;   
+    width: 100px;
+    height: 30px;
+    padding: 3px;   
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center; 
+    cursor:pointer;
+    border-bottom: black  solid 1px;
+    box-shadow: black 0px 5px 8px;
+}
+
+.button:nth-child(1) {
+    background-color: #3f87a6;
+   
+}
+.button:nth-child(2) {
+    background-color: #5cb5db;
+}
+
+
+.button:nth-child(3) {
+    background-color: #f5b674;
+}
+.button:nth-child(4) {
+    background-color: #f69d3c;
+}
+
+.kaitlente >.ignite{
+background-color: red;
+display: inline-block;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+align-self:center;
+justify-self: center;
+background: linear-gradient(to bottom, red , yellow, white);
+border: none 5px;
+box-shadow: red 0px 12px 20px;
+transform: translateY(-10px);
+}
+
+.buttons > .btnToggle {
+    transform: translateY(-10px);
+    border-bottom: black  solid 1px;
+    box-shadow: black 0px 5px 8px;
+    color: red;
+}
+
+
+
